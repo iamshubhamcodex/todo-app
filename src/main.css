@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Colors */
+  --primaryColor: #970fec;
+  --contentBgColor: #e3e6f0;
+  --asideBgColor: #f1f4f9;
+  --highlightColor: #ee5480;
+  --highlightBgColor: #eddbe0;
+  --textColor: #787d91;
+  --headingColor: #565c74;
+  --whiteColor: #f4f4f4;
+  --borderColor: #bfc2ce;
+  --pendingTaskColor: rgb(252, 190, 181);
+  --progressTaskColor: rgb(255, 255, 212);
+  --completedTaskColor: rgb(181, 251, 160);
+  --boxShadowColor: grey;
+
+  /* Font Sizes */
+  --fs36: 3.6rem;
+  --fs34: 3.4rem;
+  --fs32: 3.2rem;
+  --fs30: 3rem;
+  --fs28: 2.8rem;
+  --fs26: 2.6rem;
+  --fs24: 2.4rem;
+  --fs22: 2.2rem;
+  --fs20: 2rem;
+  --fs18: 1.8rem;
+  --fs16: 1.6rem;
+  --fs14: 1.4rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+}
+html {
+  font-size: 62.5%;
+  transition: none !important;
+}
+h1,
+h2,
+h3,
+p,
+label,
+a,
+button {
+  color: var(--textColor);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs16);
+}
+:root:has(main.main.dark) {
+  /* Colors */
+  --primaryColor: #970fec;
+  --contentBgColor: #202229;
+  --asideBgColor: #36393e;
+  --highlightColor: #ffa2bd;
+  --highlightBgColor: #72193269;
+  --textColor: #d4ddff;
+  --headingColor: #ebefff;
+  --textBlackColor: #36383f;
+  --whiteColor: #f4f4f4;
+  --borderColor: #d0d1d5;
+  --pendingTaskColor: rgba(255, 42, 0, 0.074);
+  --progressTaskColor: rgba(255, 255, 0, 0.144);
+  --completedTaskColor: rgba(60, 255, 0, 0.093);
+  --boxShadowColor: #3a3a3a;
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    /* Font Sizes */
+    --fs36: 3.4rem;
+    --fs34: 3.3rem;
+    --fs32: 3rem;
+    --fs30: 2.8rem;
+    --fs28: 2.6rem;
+    --fs26: 2.4rem;
+    --fs24: 2.2rem;
+    --fs22: 2rem;
+    --fs20: 1.8rem;
+    --fs18: 1.6rem;
+    --fs16: 1.4rem;
+    --fs14: 1.3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  :root {
+    /* Font Sizes */
+    --fs36: 3.1rem;
+    --fs34: 3rem;
+    --fs32: 2.8rem;
+    --fs30: 2.6rem;
+    --fs28: 2.4rem;
+    --fs26: 2.2rem;
+    --fs24: 2rem;
+    --fs22: 1.8rem;
+    --fs20: 1.7rem;
+    --fs18: 1.4rem;
+    --fs16: 1.3rem;
+    --fs14: 1.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  :root {
+    /* Font Sizes */
+    --fs36: 3rem;
+    --fs34: 2.8rem;
+    --fs32: 2.6rem;
+    --fs30: 2.4rem;
+    --fs28: 2.2rem;
+    --fs26: 2rem;
+    --fs24: 1.8rem;
+    --fs22: 1.7rem;
+    --fs20: 1.5rem;
+    --fs18: 1.3rem;
+    --fs16: 1.2rem;
+    --fs14: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    /* Font Sizes */
+    --fs36: 2.7rem;
+    --fs34: 2.5rem;
+    --fs32: 2.3rem;
+    --fs30: 2.1rem;
+    --fs28: 1.8rem;
+    --fs26: 1.75rem;
+    --fs24: 1.6rem;
+    --fs22: 1.4rem;
+    --fs20: 1.3rem;
+    --fs18: 1.2rem;
+    --fs16: 1.1rem;
+    --fs14: 1rem;
+  }
+}

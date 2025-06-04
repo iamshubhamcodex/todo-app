@@ -1,0 +1,107 @@
+.sidebarContainer {
+  --sidebarWidth: min(20vw, 30rem);
+  --sidebarPaddingY: 3.8rem;
+  --sidebarPaddingX: 1.5rem;
+  --sidebarGap: 2rem;
+
+  --sidebarButtonPadding: 1.5rem 3rem;
+  --sidebarButtonNewPadding: 1rem 3rem;
+  --categoryItemPadding: 1rem;
+
+  position: relative;
+  height: 100%;
+  z-index: 10;
+}
+.sidebarContainer span.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: var(--headingColor);
+  cursor: pointer;
+}
+.sidebarContainer .sidebar {
+  position: relative;
+  height: 100%;
+  background: var(--asideBgColor);
+  padding-block: var(--sidebarPaddingY);
+  min-width: var(--sidebarWidth);
+  width: var(--sidebarWidth);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--sidebarGap);
+}
+.sidebarContainer h3 {
+  font-size: var(--fs22);
+  font-weight: 600;
+  text-align: center;
+  color: var(--headingColor);
+  margin-inline: var(--sidebarPaddingX);
+}
+.sidebarContainer button.addTask {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: var(--sidebarButtonPadding);
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  margin-inline: var(--sidebarPaddingX);
+  cursor: pointer;
+}
+.sidebarContainer .categories {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sidebarContainer .categories .category-item {
+  padding-block: var(--categoryItemPadding);
+  padding-inline: var(--sidebarPaddingX);
+  border-right: 0.5rem solid transparent;
+  font-size: var(--fs16);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+}
+.sidebarContainer .categories .category-item span {
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebarContainer .categories .category-item:hover span {
+  opacity: 1;
+  pointer-events: all;
+}
+.sidebarContainer .categories .category-item p,
+.sidebarContainer .categories .category-item svg {
+  flex-grow: 1;
+  color: var(--textColor);
+}
+.sidebarContainer .categories .category-item.active {
+  background-color: var(--highlightBgColor);
+  color: var(--highlightColor);
+  border-right-color: var(--highlightColor);
+}
+.sidebarContainer .categories .category-item.active p,
+.sidebarContainer .categories .category-item.active svg {
+  color: var(--highlightColor);
+}
+.sidebarContainer button.addCategories {
+  outline: none;
+  border-radius: 10px;
+  padding: var(--sidebarButtonNewPadding);
+  border: 2px dashed var(--borderColor);
+  margin-inline: var(--sidebarPaddingX);
+  background: transparent;
+  cursor: pointer;
+  color: var(--textColor);
+}
+.sidebarContainer input.addCategories {
+  outline: none;
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  font-size: var(--fs16);
+  border: 2px dashed var(--borderColor);
+  margin-inline: var(--sidebarPaddingX);
+  background: transparent;
+  color: var(--textColor);
+}

@@ -1,0 +1,62 @@
+.navbarContainer {
+  --navbarGap: 1rem;
+
+  --inputPadding: 1.5rem 2rem;
+  --navbarButtonPadding: 1rem 2.25rem;
+
+  display: flex;
+  gap: var(--navbarGap);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  color: var(--textColor);
+}
+.navbarContainer .sidebarToggle {
+  display: none;
+}
+.navbarContainer .sideSetting {
+  display: none;
+}
+.navbarContainer .input {
+  background-color: var(--asideBgColor);
+  border: none;
+  box-shadow: 0 0 4px -3px rgb(130, 130, 130);
+  overflow: hidden;
+  padding: var(--inputPadding);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+}
+.navbarContainer .input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: var(--fs18);
+  color: var(--textColor);
+  font-weight: 500;
+  width: calc(100% - 2.5rem);
+}
+.navbarContainer .input input::placeholder {
+  color: var(--textColor);
+}
+.navbarContainer .input svg {
+  color: var(--textColor);
+}
+.navbarContainer .date {
+  font-size: var(--fs18);
+  font-weight: 500;
+}
+.navbarContainer button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: var(--navbarButtonPadding);
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+}

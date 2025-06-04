@@ -1,0 +1,77 @@
+.mainContentContainer .addTask {
+  --addTaskPadding: 0rem 2rem;
+  --addTaskGap: 2rem;
+  --addTaskInputsGap: 2rem;
+  --inputPadding: 1rem 1.5rem;
+  --addTaskButtonPadding: 1rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--addTaskGap);
+  padding: var(--addTaskPadding);
+}
+.mainContentContainer .addTask .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--addTaskInputsGap);
+}
+.mainContentContainer .addTask .inputs .w-100 {
+  min-width: 100%;
+  max-width: 100%;
+}
+.mainContentContainer .addTask .inputs .w-50 {
+  min-width: calc(50% - calc(var(--addTaskInputsGap) / 2));
+  max-width: calc(50% - calc(var(--addTaskInputsGap) / 2));
+}
+.mainContentContainer .addTask .inputs .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.mainContentContainer .addTask .inputs .input-group label {
+  font-weight: 500;
+  font-size: var(--fs18);
+  width: max-content;
+}
+.mainContentContainer .addTask .inputs .input-group input,
+.mainContentContainer .addTask .inputs .input-group select {
+  font-size: var(--fs16);
+  color: var(--textColor);
+  width: 100%;
+  background-color: var(--asideBgColor);
+  border: none;
+  box-shadow: 0 0 4px -3px rgb(130, 130, 130);
+  overflow: hidden;
+  padding: var(--inputPadding);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 0 8px -5px transparent;
+}
+.mainContentContainer .addTask .inputs .input-group input:focus,
+.mainContentContainer .addTask .inputs .input-group select:focus {
+  box-shadow: 0 0 8px -5px var(--boxShadowColor);
+}
+.mainContentContainer .addTask .btns {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.mainContentContainer .addTask .btns button:first-child {
+  color: var(--textColor);
+  background-color: var(--asideBgColor);
+}
+.mainContentContainer .addTask .btns button:last-child {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.mainContentContainer .addTask .btns button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: var(--addTaskButtonPadding);
+  font-weight: 500;
+}

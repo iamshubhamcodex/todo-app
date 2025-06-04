@@ -1,0 +1,82 @@
+.mainContentContainer .taskContainer.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--taskContainerGridColumn), 1fr);
+  grid-auto-rows: auto;
+  gap: var(--taskContainerGridGap);
+}
+.mainContentContainer .taskContainer.grid .taskCard {
+  background: var(--asideBgColor);
+  padding: var(--gridTaskCardPadding);
+  border-radius: 8px;
+  box-shadow: 4px 4px 14px -10px var(--boxShadowColor);
+  color: var(--textColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContentContainer .taskContainer.grid .taskCard .head select {
+  font-size: var(--fs16);
+  color: var(--textColor);
+  width: max-content;
+  background-color: var(--asideBgColor);
+  border: none;
+  box-shadow: 0 0 4px -3px rgb(130, 130, 130);
+  overflow: hidden;
+  padding: var(--taskCardStatusPadding);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 0 8px -5px transparent;
+}
+.mainContentContainer .taskContainer.grid .taskCard.pending {
+  background: var(--pendingTaskColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard.progress {
+  background: var(--progressTaskColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard.done {
+  background: var(--completedTaskColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard h3 {
+  font-size: var(--fs20);
+  font-weight: 600;
+  color: var(--headingColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard .desc {
+  font-size: var(--fs16);
+  min-height: 100px;
+  width: 100%;
+  color: var(--headingColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard .date {
+  font-size: var(--fs16);
+  width: 100%;
+  font-weight: 500;
+  text-align: right;
+  color: var(--headingColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard .taskActions {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed var(--borderColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard .category {
+  font-size: var(--fs16);
+  font-weight: 500;
+  color: var(--highlightColor);
+}
+.mainContentContainer .taskContainer.grid .taskCard .actions {
+  display: flex;
+  gap: 6px;
+}
+.mainContentContainer .taskContainer.grid .taskCard .actions {
+  display: flex;
+  gap: 6px;
+}
+.mainContentContainer .taskContainer.grid .taskCard .actions svg {
+  cursor: pointer;
+}

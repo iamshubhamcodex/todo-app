@@ -1,0 +1,310 @@
+/* Main Container CSS */
+main {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100vw;
+  height: 100dvh;
+  background: var(--contentBgColor);
+}
+
+/* Content CSS */
+.content {
+  --contentPadding: 2rem 3rem;
+  --contentGap: 3.5rem;
+
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--contentPadding);
+  gap: var(--contentGap);
+  overflow: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+  .sidebarContainer {
+    --sidebarWidth: min(20vw, 20rem);
+    --sidebarPaddingY: 3rem;
+    --sidebarPaddingX: 1.2rem;
+    --sidebarGap: 1.7rem;
+
+    --sidebarButtonPadding: 1.25rem 2.5rem;
+    --sidebarButtonNewPadding: 0.75rem 2.5rem;
+    --categoryItemPadding: 1rem;
+  }
+  .content {
+    --contentPadding: 1.75rem 2.25rem;
+    --contentGap: 3rem;
+  }
+  .navbarContainer {
+    --navbarGap: 0.75rem;
+
+    --inputPadding: 1.2rem 1.5rem;
+    --navbarButtonPadding: 1rem 2rem;
+  }
+  .mainContentContainer {
+    --mainContainerGap: 1.7rem;
+    --sortByPadding: 1rem 1.5rem;
+    --sortByPaddingRight: 3.2rem;
+    --taskContainerGridColumn: 3;
+    --taskContainerGridGap: 1.5rem;
+
+    --gridTaskCardPadding: 1.2rem 1.5rem;
+  }
+  .mainContentContainer > h3 {
+    margin-bottom: 2rem;
+  }
+  .mainContentContainer .taskActions .sortBy select {
+    background-size: 15px;
+  }
+  .rightAsideContainer {
+    --rightAsideWidth: calc(min(20vw, 25rem) * 0.9);
+    --rightAsidePaddingY: 3rem;
+    --rightAsidePaddingX: 1rem;
+    --rightAsideGap: 2.5rem;
+
+    --rightAsideChecBoxBg: #e3e6f0;
+
+    --rightAsideButtonPadding: 1.5rem 3rem;
+    --rightAsideButtonNewPadding: 1rem 3rem;
+    --categoryItemPadding: 1rem;
+  }
+  .navbarContainer .input {
+    max-width: 38%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .sidebarContainer {
+    --sidebarWidth: min(90vw, 28rem);
+    --sidebarPaddingY: 3rem;
+    --sidebarPaddingX: 1.2rem;
+    --sidebarGap: 1.7rem;
+
+    --sidebarButtonPadding: 1.25rem 2.5rem;
+    --sidebarButtonNewPadding: 0.75rem 2.5rem;
+    --categoryItemPadding: 1rem;
+
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: #00000089;
+    transform: translateX(-200vw);
+  }
+  .sidebarContainer.show {
+    transform: translateX(0);
+  }
+  .content {
+    --contentPadding: 1.2rem 1.2rem;
+    --contentGap: 2.5rem;
+  }
+  .navbarContainer {
+    --navbarGap: 0.5rem;
+
+    --inputPadding: 0.75rem 1rem;
+    --navbarButtonPadding: 0.75rem 1.25rem;
+  }
+  .navbarContainer .sidebarToggle {
+    display: block;
+  }
+  .mainContentContainer {
+    --mainContainerGap: 1rem;
+    --sortByPadding: 1rem 1.5rem;
+    --sortByPaddingRight: 3.2rem;
+    --taskContainerGridColumn: 2;
+    --taskContainerGridGap: 1.5rem;
+
+    --gridTaskCardPadding: 1.2rem 1.5rem;
+    --taskCardStatusPadding: 0.6rem 0.8rem;
+  }
+  .mainContentContainer > h3 {
+    margin-bottom: 2rem;
+  }
+  .mainContentContainer .taskActions .sortBy select {
+    background-size: 15px;
+  }
+  .rightAsideContainer {
+    --rightAsideWidth: calc(min(30vw, 32rem) * 1);
+    --rightAsidePaddingY: 3rem;
+    --rightAsidePaddingX: 1rem;
+    --rightAsideGap: 2rem;
+
+    --rightAsideChecBoxBg: #e3e6f0;
+
+    --rightAsideButtonPadding: 1.25rem 3rem;
+    --rightAsideButtonNewPadding: 1rem 3rem;
+    --categoryItemPadding: 0.75rem;
+  }
+  .navbarContainer .input {
+    max-width: 38%;
+  }
+  .mainContentContainer .addTask {
+    --addTaskPadding: 0 1rem;
+    --addTaskGap: 0.9rem;
+    --addTaskInputsGap: 1.5rem;
+    --inputPadding: 0.9rem 1rem;
+    --addTaskButtonPadding: 0.8rem 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sidebarContainer {
+    --sidebarWidth: min(90vw, 28rem);
+    --sidebarPaddingY: 3rem;
+    --sidebarPaddingX: 1.2rem;
+    --sidebarGap: 1.7rem;
+
+    --sidebarButtonPadding: 1.25rem 2.5rem;
+    --sidebarButtonNewPadding: 0.75rem 2.5rem;
+    --categoryItemPadding: 1rem;
+  }
+  .content {
+    --contentPadding: 1.2rem 1.2rem;
+    --contentGap: 2.5rem;
+  }
+  .navbarContainer {
+    --navbarGap: 0.5rem;
+
+    --inputPadding: 0.75rem 1rem;
+    --navbarButtonPadding: 0.75rem 1.25rem;
+  }
+  .navbarContainer .sideSetting {
+    display: block;
+  }
+  .mainContentContainer {
+    --mainContainerGap: 1rem;
+    --sortByPadding: 1rem 1.5rem;
+    --sortByPaddingRight: 3.2rem;
+    --taskContainerGridColumn: 2;
+    --taskContainerGridGap: 1.5rem;
+
+    --gridTaskCardPadding: 1.2rem 1.5rem;
+    --taskCardStatusPadding: 0.5rem 0.75rem;
+  }
+  .mainContentContainer > h3 {
+    margin-bottom: 2rem;
+  }
+  .mainContentContainer .taskActions .sortBy select {
+    background-size: 15px;
+  }
+  .rightAsideContainer {
+    --rightAsideWidth: min(90vw, 25rem);
+    --rightAsidePaddingY: 3rem;
+    --rightAsidePaddingX: 1rem;
+    --rightAsideGap: 2rem;
+
+    --rightAsideChecBoxBg: #e3e6f0;
+
+    --rightAsideButtonPadding: 1.25rem 3rem;
+    --rightAsideButtonNewPadding: 1rem 3rem;
+    --categoryItemPadding: 0.75rem;
+
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: #00000089;
+    transform: translateX(200vw);
+    display: none;
+  }
+  .rightAsideContainer .rightAside {
+    float: right;
+  }
+  .rightAsideContainer .rightAside .close {
+    display: block;
+  }
+  .rightAsideContainer.show {
+    display: block;
+    transform: translateX(0);
+  }
+  .navbarContainer .input {
+    max-width: 38%;
+  }
+  .mainContentContainer .addTask {
+    --addTaskPadding: 0rem;
+    --addTaskGap: 0.75rem;
+    --addTaskInputsGap: 1.25rem;
+    --inputPadding: 0.75rem 1rem;
+    --addTaskButtonPadding: 0.75rem 1.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sidebarContainer {
+    --sidebarWidth: min(90vw, 28rem);
+    --sidebarPaddingY: 3rem;
+    --sidebarPaddingX: 1.2rem;
+    --sidebarGap: 1.7rem;
+
+    --sidebarButtonPadding: 1.25rem 2.5rem;
+    --sidebarButtonNewPadding: 0.75rem 2.5rem;
+    --categoryItemPadding: 1rem;
+  }
+  .content {
+    --contentPadding: 1.2rem 1.2rem;
+    --contentGap: 2.5rem;
+  }
+  .navbarContainer {
+    --navbarGap: 0.5rem;
+
+    --inputPadding: 0.5rem 1rem;
+    --navbarButtonPadding: 0.5rem 1rem;
+  }
+  .navbarContainer button {
+    border-radius: 6px;
+  }
+  .navbarContainer .input input {
+    width: calc(100% - 2rem);
+  }
+  .mainContentContainer {
+    --mainContainerGap: 1rem;
+    --sortByPadding: 1rem 1.25rem;
+    --sortByPaddingRight: 2.75rem;
+    --taskContainerGridColumn: 1;
+    --taskContainerGridGap: 1rem;
+
+    --gridTaskCardPadding: 0.75rem 1.25rem;
+  }
+  .mainContentContainer .taskContainer.grid .taskCard .desc {
+    min-height: 40px;
+  }
+  .mainContentContainer > h3 {
+    margin-bottom: 1.5rem;
+  }
+  .mainContentContainer .taskActions .sortBy select {
+    background-size: 15px;
+  }
+  .rightAsideContainer {
+    --rightAsideWidth: min(90vw, 25rem);
+    --rightAsidePaddingY: 3rem;
+    --rightAsidePaddingX: 1rem;
+    --rightAsideGap: 2rem;
+
+    --rightAsideChecBoxBg: #e3e6f0;
+
+    --rightAsideButtonPadding: 1.25rem 3rem;
+    --rightAsideButtonNewPadding: 1rem 3rem;
+    --categoryItemPadding: 0.75rem;
+  }
+  .navbarContainer .input {
+    max-width: 38%;
+  }
+  svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .mainContentContainer > .taskActions svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .navbarContainer .sideSetting svg {
+    width: 20px !important;
+    height: 20px !important;
+    color: var(--headingColor);
+  }
+  .mainContentContainer .addTask {
+    --addTaskPadding: 0rem;
+    --addTaskGap: 0.75rem;
+    --addTaskInputsGap: 1.25rem;
+    --inputPadding: 0.75rem 1rem;
+    --addTaskButtonPadding: 0.75rem 1.5rem;
+  }
+}
