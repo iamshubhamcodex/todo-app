@@ -1,6 +1,6 @@
 # 📝 React Todo App
 
-A modern and minimal **Todo List App** built using **React + Zustand + TailwindCSS**, inspired by a clean UI design from [this mockup](https://raw.githubusercontent.com/x1-il/todo-app/main/public/To-Do%20List%20_%20All%20tasks.png).
+A modern and minimal **Todo List App** built using **React + Zustand + Typescript**, inspired by a clean UI design from [this mockup](https://raw.githubusercontent.com/x1-il/todo-app/main/public/To-Do%20List%20_%20All%20tasks.png).
 
 ---
 
@@ -10,7 +10,7 @@ A modern and minimal **Todo List App** built using **React + Zustand + TailwindC
 
 - UI layout closely follows this design:  
   ![Design Reference](https://raw.githubusercontent.com/x1-il/todo-app/main/public/To-Do%20List%20_%20All%20tasks.png)
-- Built with TailwindCSS for responsive and clean styling.
+- Built with Typescript for type safety and clean code.
 
 ### ✅ 2. Category-Based Task Organization
 
