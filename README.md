@@ -2,6 +2,8 @@
 
 A modern and minimal **Todo List App** built using **React + Zustand + Typescript**, inspired by a clean UI design from [this mockup](https://raw.githubusercontent.com/x1-il/todo-app/main/public/To-Do%20List%20_%20All%20tasks.png).
 
+Live Project 👉 [https://shubhamcdx-todo.netlify.app/](https://shubhamcdx-todo.netlify.app/)
+
 ---
 
 ## 🚀 Features
@@ -56,7 +58,7 @@ A modern and minimal **Todo List App** built using **React + Zustand + Typescrip
 ## 🧱 Tech Stack
 
 - **React** – Frontend framework
-- **Typescript** - For Type Safety
+- **Typescript** – For type safety
 - **Zustand** – Lightweight state management
 - **localStorage** – For persistent client-side storage
 
@@ -69,4 +71,3 @@ git clone https://github.com/iamshubhamcodex/todo-app.git
 cd todo-app
 npm install
 npm run dev
-```
